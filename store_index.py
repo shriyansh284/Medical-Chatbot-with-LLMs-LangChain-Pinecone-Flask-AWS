@@ -40,7 +40,7 @@ if index_name not in existing_indexes:
         name=index_name,
         dimension=384,  # must match your embedding model output dimension
         metric="cosine",
-        spec=ServerlessSpec(cloud="aws", region="us-east-1"),
+        spec=ServerlessSpec(cloud="aws", region="eu-north-1"),
     )
 
 # Get reference to the index
